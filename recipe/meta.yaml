@@ -1,5 +1,6 @@
 {% set name = "nine" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "e8a96b6326341637d25ca9c257c1d2af4033c957946438d9d37bf6eb798d3bbe" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +8,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "3064fbeb512e756a415606a1399f49c22de867d5ac7e2b6c91c35e757d3af42d"
+  sha256: {{ sha256 }}
 
 build:
   number: 0
