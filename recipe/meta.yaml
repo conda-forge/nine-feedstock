@@ -17,6 +17,7 @@ build:
 
 requirements:
   host:
+    - setuptools
     - pip
     - python {{ python_min }}
   run:
@@ -31,7 +32,6 @@ test:
 about:
   home: "https://github.com/nandoflorestan/nine"
   license: "Public domain"
-  license_family: "PUBLIC-DOMAIN"
   license_file: "LICENSE.rst"
   summary: "Python 2 / 3 compatibility, like six, but favouring Python 3"
   doc_url: "https://pypi.org/project/nine/"
