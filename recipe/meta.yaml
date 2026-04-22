@@ -11,25 +11,27 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   noarch: python
 
 requirements:
   host:
+    - setuptools
     - pip
-    - python
+    - python {{ python_min }}
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - nine
 
 about:
   home: "https://github.com/nandoflorestan/nine"
   license: "Public domain"
-  license_family: "PUBLIC-DOMAIN"
   license_file: "LICENSE.rst"
   summary: "Python 2 / 3 compatibility, like six, but favouring Python 3"
   doc_url: "https://pypi.org/project/nine/"
