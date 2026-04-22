@@ -1,6 +1,6 @@
 {% set name = "nine" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "e8a96b6326341637d25ca9c257c1d2af4033c957946438d9d37bf6eb798d3bbe" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "352a7dfe11953b7f4d128a847ae01ee74b1d9dfc952f82f3cb1f1dbd41e66ca9" %}
 
 package:
   name: "{{ name|lower }}"
